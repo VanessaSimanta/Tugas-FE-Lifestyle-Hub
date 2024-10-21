@@ -4,24 +4,26 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Lifestyle Theme - Dark/Light Mode</title>
-    <!-- Bootstrap 5 CSS -->
+    <!-- Bootstrap 5 -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
-    <!-- Font Awesome for Icons -->
+    <!-- Icons -->
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
       rel="stylesheet"
     />
-    <!-- External CSS -->
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body class="bg-light">
+  <body class="bg-light text-dark">
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Lifestyle Vibes</a>
+    <nav class="navbar navbar-expand-lg custom-navbar">
+      <div class="container-fluid p-3 ps-5 pe-5">
+        <a class="navbar-brand text-white fs-2 fw-bold" href="#"
+          >Lifestyle Vibes</a
+        >
         <button
           class="navbar-toggler"
           type="button"
@@ -35,20 +37,24 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            <li class="nav-item me-2">
+              <a
+                class="nav-link active text-white"
+                aria-current="page"
+                href="index.html"
+                >Home</a
+              >
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="about.html">About</a>
+            <li class="nav-item me-2">
+              <a class="nav-link text-white" href="#about">About</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
+            <li class="nav-item me-2">
+              <a class="nav-link text-white" href="#">Contact</a>
             </li>
-            <li class="nav-item">
-              <a class="btn btn-primary" href="#">Subscribe</a>
+            <li class="nav-item me-2">
+              <a class="btn btn-light" href="#subs">Subscribe</a>
             </li>
           </ul>
-          <!-- Dark/Light Mode Toggle Icon -->
           <i id="themeIcon" class="fas fa-sun icon-toggle dark-mode ms-3"></i>
         </div>
       </div>
@@ -56,18 +62,34 @@
 
     <!-- Main content -->
     <main class="container my-5">
-      <div class="row">
-        <section class="col-lg-8 mx-auto">
+      <!-- Home -->
+      <div class="row border border-secondary-subtle rounded p-3" id="home">
+        <div class="col-lg-6">
           <hgroup>
-            <h2>Welcome to the Lifestyle Hub</h2>
-            <h3>Explore trends, wellness, and living your best life</h3>
+            <h2 class="text-center fw-bold">Welcome to the Lifestyle Hub</h2>
+            <h3 class="text-center fw-500">
+              Explore trends, wellness, and living your best life
+            </h3>
           </hgroup>
-          <p>
+          <p class="text-center">
             Lifestyle is all about finding balance, embracing health, and living
-            in the moment. Whether you're into fitness, mindfulness, or just
-            looking to elevate your daily routines, you've come to the right
-            place.
+            in the moment. Whether you're into fitness, mindfulness, or looking
+            to enhance your daily routines, you've come to the right place.
           </p>
+          <p class="text-center">
+            Stay ahead of trends in fashion and wellness, helping you express
+            yourself while staying grounded. Whether you're exploring meditation
+            techniques or seeking eco-friendly fashion ideas, the Lifestyle Hub
+            provides the resources to make your journey fulfilling and
+            enriching.
+          </p>
+          <div class="d-flex justify-content-center">
+            <a href="#latest" class="btn btn-secondary btn-lg"
+              >Get Started</a
+            >
+          </div>
+        </div>
+        <div class="col-lg-6">
           <figure class="figure">
             <img
               src="https://images.unsplash.com/photo-1507919909716-c8262e491cde?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
@@ -75,25 +97,95 @@
               alt="Wellness lifestyle image from Unsplash"
             />
             <figcaption class="figure-caption">
-              <a href="https://unsplash.com" target="_blank">Photo from Unsplash</a>
+              <a
+                href="https://unsplash.com"
+                target="_blank"
+                class="text-primary"
+                >Photo from Unsplash</a
+              >
             </figcaption>
           </figure>
-          <h3>Latest in Wellness</h3>
-          <p>
-            Discover the latest trends in wellness, from meditation techniques
-            to fitness tips that keep you grounded and healthy.
-          </p>
-          <h3>Explore Fashion & Trends</h3>
-          <p>
-            Stay ahead in fashion with insights into what's trending,
-            sustainable fashion tips, and more.
-          </p>
-        </section>
+        </div>
       </div>
+
+      <div class="row p-3 mt-4" id="latest">
+        <h3>Latest in Wellness</h3>
+        <p>
+            Discover the latest trends in wellness, from meditation techniques to
+            fitness tips that keep you grounded and healthy.
+        </p>
+        
+        <div class="carousel-container">
+          <div id="carousel" class="carousel slide" data-bs-ride="carousel"> <!-- Added data-bs-ride to enable auto sliding -->
+              <div class="carousel-inner">
+                  <div class="carousel-item active">
+                      <img src="image/carousel1.jpeg" class="d-block w-100" alt="...">
+                      <div class="carousel-caption d-none d-md-block border border-secondary-subtle rounded bg-secondary">
+                          <h5 class="text-body-black">Benefits of Digital Detox</h5>
+                          <p class="text-body-black">Taking breaks from screens and social media to enhance mental clarity, reduce anxiety, and improve face-to-face interactions.</p>
+                          <div class="d-flex justify-content-center">
+                              <a href="https://www.nuffieldhealth.com/article/how-a-digital-detox-can-help-you" class="btn btn-light btn-sm">Read More</a>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="carousel-item">
+                      <img src="image/carousel2.jpeg" class="d-block w-100" alt="...">
+                      <div class="carousel-caption d-none d-md-block border border-secondary-subtle rounded bg-secondary">
+                        <h5 class="text-body-black">Yoga For Better Life</h5>
+                        <p class="text-body-black">Combines physical postures, breathing techniques, and meditation to enhance flexibility, strength, and mental clarity.</p>
+                        <div class="d-flex justify-content-center">
+                            <a href="https://www.wikihow.com/Do-Yoga" class="btn btn-light btn-sm">Read More</a>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                      <img src="image/carousel3.jpeg" class="d-block w-100" alt="...">
+                      <div class="carousel-caption d-none d-md-block border border-secondary-subtle rounded bg-secondary">
+                        <h5 class="text-body-black">Nature Therapy ?</h5>
+                        <p class="text-body-black">Spending time in nature to improve mental well-being, reduce stress, and enhance overall mood.</p>
+                        <div class="d-flex justify-content-center">
+                            <a href="https://www.webmd.com/balance/features/nature-therapy-ecotherapy" class="btn btn-light btn-sm">Read More</a>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                      <img src="image/_.jpeg" class="d-block w-100" alt="...">
+                      <div class="carousel-caption d-none d-md-block border border-secondary-subtle rounded bg-secondary">
+                        <h5 class="text-body-black">What is Mindfulness Meditation</h5>
+                        <p class="text-body-black">Focus on the present moment, observing thoughts and feelings without judgment. This practice can reduce stress and improve emotional well-being.</p>
+                        <div class="d-flex justify-content-center">
+                            <a href="https://www.mindful.org/mindfulness-how-to-do-it/" class="btn btn-light btn-sm">Read More</a>
+                        </div>
+                    </div>
+                  </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+              </button>
+          </div>
+        </div>
+      
+        
+        <h3>Explore Fashion & Trends</h3>
+        <p>
+            Stay ahead in fashion with insights into what's trending, sustainable
+            fashion tips, and more.
+        </p>
+    </div>
+    
     </main>
 
     <!-- Subscribe section -->
-    <section aria-label="Subscribe example" class="bg-light py-5">
+    <section
+      aria-label="Subscribe example"
+      class="bg-secondary bg-gradient py-5"
+      id="subs"
+    >
       <div class="container">
         <article class="text-center">
           <hgroup>
@@ -124,9 +216,7 @@
               />
             </div>
             <div class="col-12">
-              <button type="submit" class="btn btn-primary">
-                Subscribe
-              </button>
+              <button type="submit" class="btn btn-primary">Subscribe</button>
             </div>
           </form>
         </article>
@@ -134,7 +224,7 @@
     </section>
 
     <!-- Footer -->
-    <footer class="container text-center py-3">
+    <footer class="container-fluid text-center custom-footer py-3">
       <small>
         <a href="#">Privacy Policy</a> •
         <a href="#">Terms & Conditions</a>
@@ -147,30 +237,47 @@
 
     <!-- Dark Mode Toggle Script -->
     <script>
-      const themeIcon = document.getElementById('themeIcon');
+      const themeIcon = document.getElementById("themeIcon");
       const body = document.body;
+      const navbar = document.querySelector(".navbar");
+      const footer = document.querySelector("footer");
 
       // Toggle dark mode and switch icon
-      themeIcon.addEventListener('click', () => {
-        body.classList.toggle('dark-mode');
-        if (body.classList.contains('dark-mode')) {
-          themeIcon.classList.remove('dark-mode');
-          themeIcon.classList.add('light-mode');
-          localStorage.setItem('theme', 'dark');
+      themeIcon.addEventListener("click", () => {
+        body.classList.toggle("bg-light");
+        body.classList.toggle("text-dark");
+        body.classList.toggle("bg-dark");
+        body.classList.toggle("text-light");
+        navbar.classList.toggle("navbar-light");
+        navbar.classList.toggle("bg-light");
+        navbar.classList.toggle("navbar-dark");
+        navbar.classList.toggle("bg-dark");
+        footer.classList.toggle("bg-light");
+        footer.classList.toggle("text-dark");
+        footer.classList.toggle("bg-dark");
+        footer.classList.toggle("text-light");
+
+        if (body.classList.contains("bg-dark")) {
+          themeIcon.classList.remove("dark-mode");
+          themeIcon.classList.add("light-mode");
+          themeIcon.classList.replace("fa-moon", "fa-sun");
+          localStorage.setItem("theme", "dark");
         } else {
-          themeIcon.classList.remove('light-mode');
-          themeIcon.classList.add('dark-mode');
-          localStorage.setItem('theme', 'light');
+          themeIcon.classList.remove("light-mode");
+          themeIcon.classList.add("dark-mode");
+          themeIcon.classList.replace("fa-sun", "fa-moon");
+          localStorage.setItem("theme", "light");
         }
       });
 
       // Check local storage for saved theme preference on page load
-      window.addEventListener('load', () => {
-        const savedTheme = localStorage.getItem('theme');
-        if (savedTheme === 'dark') {
-          body.classList.add('dark-mode');
-          themeIcon.classList.remove('dark-mode');
-          themeIcon.classList.add('light-mode');
+      window.addEventListener("load", () => {
+        const savedTheme = localStorage.getItem("theme");
+        if (savedTheme === "dark") {
+          body.classList.add("bg-dark", "text-light");
+          navbar.classList.replace("navbar-light", "navbar-dark");
+          navbar.classList.replace("bg-light", "bg-dark");
+          themeIcon.classList.replace("fa-sun", "fa-moon");
         }
       });
     </script>
