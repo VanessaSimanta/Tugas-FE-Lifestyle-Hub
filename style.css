@@ -90,3 +90,16 @@ a {
     opacity: 1;
     transform: translateX(0);
 }
+  
+.counter-item:hover {
+transform: translateY(-5px);
+}
+
+.counter-stat {
+color: #39333d; 
+}
+
+.custom-background {
+    background-color: #c9d2d6;
+}
+

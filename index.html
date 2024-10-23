@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Lifestyle Theme - Dark/Light Mode</title>
+    <title>Lifestyle Hub</title>
     <!-- Bootstrap 5 -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
@@ -41,7 +41,7 @@
               <a class="nav-link active text-white fw-medium" id="home" aria-current="page" href="index.html">Home</a>
             </li>
             <li class="nav-item me-2">
-                <a class="nav-link text-white fw-medium" id="about" href="#about">About</a>
+                <a class="nav-link text-white fw-medium" id="about" href="about.html">About</a>
             </li>
             <li class="nav-item me-2">
                 <a class="nav-link text-white fw-medium" id="contact" href="#">Contact</a>
@@ -55,7 +55,7 @@
       </div>
     </nav>
 
-    <!-- Main content -->
+    <!-- Main Home Content -->
     <main class="container my-5">
       <!-- Home -->
       <div class="row border border-secondary-subtle rounded p-3 shadow mb-5 bg-body-tertiary animation1" id="home">
@@ -104,7 +104,7 @@
       </div>
 
       <!-- Wellness Carousel -->
-      <div class="row p-3 mt-4" id="about">
+      <div class="row p-3 mt-4" id="latest">
         <h3 class="text-center lh-base">Latest in Wellness</h3>
         <p class="text-center lh-base">
           Discover the latest trends in wellness, from meditation techniques to
@@ -116,7 +116,7 @@
               <div id="carousel" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                   <div class="carousel-item active shadow mb-5">
-                    <img src="image/carousel1.jpeg" class="d-block w-100" alt="..." />
+                    <img src="image/carousel1.jpeg" class="d-block w-100" alt="picture of a laptop" />
                     <div class="carousel-caption d-none d-md-block border border-secondary-subtle rounded bg-secondary">
                       <h5 class="text-body-black lh-base">Benefits of Digital Detox</h5>
                       <p class="text-body-black lh-base">
@@ -130,7 +130,7 @@
                     </div>
                   </div>
                   <div class="carousel-item shadow mb-5">
-                    <img src="image/carousel2.jpeg" class="d-block w-100" alt="..." />
+                    <img src="image/carousel2.jpeg" class="d-block w-100" alt="someone doing yoga" />
                     <div class="carousel-caption d-none d-md-block border border-secondary-subtle rounded bg-secondary">
                       <h5 class="text-body-black lh-base">Yoga For Better Life</h5>
                       <p class="text-body-black lh-base">
@@ -144,7 +144,7 @@
                     </div>
                   </div>
                   <div class="carousel-item shadow mb-5">
-                    <img src="image/carousel3.jpeg" class="d-block w-100" alt="..." />
+                    <img src="image/carousel3.jpeg" class="d-block w-100" alt="a person in beach with laptop" />
                     <div class="carousel-caption d-none d-md-block border border-secondary-subtle rounded bg-secondary">
                       <h5 class="text-body-black lh-base">Nature Therapy?</h5>
                       <p class="text-body-black lh-base">
@@ -157,7 +157,7 @@
                     </div>
                   </div>
                   <div class="carousel-item shadow mb-5">
-                    <img src="image/_.jpeg" class="d-block w-100" alt="..." />
+                    <img src="image/_.jpeg" class="d-block w-100" alt="picture of a tree and sun" />
                     <div class="carousel-caption d-none d-md-block border border-secondary-subtle rounded bg-secondary">
                       <h5 class="text-body-black lh-base">What is Mindfulness Meditation</h5>
                       <p class="text-body-black lh-base">
@@ -348,88 +348,7 @@
     </footer>
 
     <!-- JS -->
-     <script>
-      //Subscribe Form
-      document.getElementById('myForm').addEventListener('submit', function(event) {
-      event.preventDefault();
-
-      const emailInput = document.getElementById('email').value;
-
-      //email validation
-      const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-      if (!emailPattern.test(emailInput)) {
-        const errorMessage = document.getElementById('error-message');
-        errorMessage.textContent = 'Please enter a valid email address.';
-        errorMessage.style.display = 'block';
-      } else {
-        document.getElementById('error-message').style.display = 'none';
-        //simpan data
-        const userEmail = document.getElementById('email').value;
-        const userName = document.getElementById('firstname').value;
-        alert('Thanks For Subcribing!');
-      }
-
-      document.getElementById('myForm').reset();
-    });
-
-    // Active Nav Bar
-    function navActive(event) {
-        const navLinks = document.querySelectorAll('.nav-link');
-        navLinks.forEach(link => link.classList.remove('active'));
-
-        event.target.classList.add('active');
-    }
-
-    document.querySelectorAll('.nav-link').forEach(link => {
-        link.addEventListener('click', navActive);
-    });
-
-    //back to top button
-    let mybutton = document.getElementById("btn-back-to-top");
-    window.onscroll = function () {
-      scrollFunction();
-    };
-
-    function scrollFunction() {
-      if (
-        document.body.scrollTop > 20 ||
-        document.documentElement.scrollTop > 20
-      ) {
-        mybutton.style.display = "block";
-      } else {
-        mybutton.style.display = "none";
-      }
-    }
-  
-    mybutton.addEventListener("click", backToTop);
-
-    function backToTop() {
-      document.body.scrollTop = 0;
-      document.documentElement.scrollTop = 0;
-    }
-
-    // Scroll animation
-    const animationClasses = ['animation1', 'animation2', 'animation3'];
-    const observers = new IntersectionObserver((entries) => {
-        entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('scroll-animation');
-            } else {
-                entry.target.classList.remove('scroll-animation');
-            }
-        });
-    }, { threshold: 0.5 });
-
-    // Observe all animations in the defined classes
-    animationClasses.forEach((animationClass) => {
-        const elements = document.querySelectorAll(`.${animationClass}`);
-        elements.forEach((element) => {
-            observers.observe(element);
-        });
-    });
-     </script>
-
-    <!-- Bootstrap JS -->
+    <script src="script.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
     ></script>
