@@ -1,24 +1,21 @@
 //Subscribe Form
 document.getElementById('myForm').addEventListener('submit', function(event) {
     event.preventDefault();
-
+  
     const emailInput = document.getElementById('email').value;
-
-    //email validation
     const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  
     if (!emailPattern.test(emailInput)) {
       const errorMessage = document.getElementById('error-message');
-      errorMessage.textContent = 'Please enter a valid email address.';
+      errorMessage.textContent = 'Please enter a valid email address !';
       errorMessage.style.display = 'block';
     } else {
       document.getElementById('error-message').style.display = 'none';
-      //simpan data
-      const userEmail = document.getElementById('email').value;
-      const userName = document.getElementById('firstname').value;
-      alert('Thanks For Subcribing!');
-    }
 
-    document.getElementById('myForm').reset();
+      alert('Thanks For Subscribing!');
+      
+      document.getElementById('myForm').reset();
+    }
   });
 
 // Active Nav Bar

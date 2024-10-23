@@ -45,8 +45,15 @@ a {
     transition: background-color 0.3s ease, transform 0.3s ease; 
 }
 
-.btn:hover, .list-group-item:hover, .card:hover {
+.btn:hover, .list-group-item:hover {
     background-color: #c9d2d6 !important; 
+    color: black;
+    transform: scale(1.05); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card:hover {
+    background-color: #dae7ed !important; 
     color: black;
     transform: scale(1.05); 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -103,3 +110,66 @@ color: #39333d;
     background-color: #c9d2d6;
 }
 
+.card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background: #fff;
+    margin-bottom: 30px;
+    transition: .5s;
+    border: 0;
+    border-radius: .55rem;
+    position: relative;
+    width: 100%;
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,0.1);
+}
+
+.card .body {
+    flex-grow: 1; 
+    font-size: 14px;
+    color: #424242;
+    padding: 20px;
+    font-weight: 400;
+}
+.card .header {
+    color: #424242;
+    padding: 20px;
+    position: relative;
+    box-shadow: none;
+}
+.card .header h2 {
+    font-size: 15px;
+    color: #757575;
+    position: relative;
+}
+.card .header h2:before {
+    background: #39333d;
+}
+.card .header h2::before {
+    position: absolute;
+    width: 20px;
+    height: 1px;
+    left: 0;
+    top: -20px;
+    content: '';
+}
+
+
+@media (max-width: 768px) {
+    .carousel-caption {
+      padding: 10px;
+      font-size: 0.5rem;
+    }
+
+    .carousel-caption h5 {
+        font-size: 0.7rem;
+    }
+
+    .carousel-caption .btn {
+        font-size: 8px ; 
+        padding: 2px 3px;
+        margin: 0;
+        width: auto; 
+    }
+  }
+  

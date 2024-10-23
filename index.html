@@ -59,49 +59,41 @@
     <main class="container my-5">
       <!-- Home -->
       <div class="row border border-secondary-subtle rounded p-3 shadow mb-5 bg-body-tertiary animation1" id="home">
-        <div class="col-lg-6">
-          <hgroup>
-            <h2 class="text-center fw-bold lh-base">Welcome to the Lifestyle Hub</h2>
-            <h3 class="text-center lh-base">
-              Explore trends, wellness, and living your best life
-            </h3>
-          </hgroup>
-          <p class="text-center lh-base">
-            Lifestyle is all about <span class="fw-medium">finding balance, embracing health, and living
-              in the moment</span>. Whether you're into <span class="fw-medium">fitness, mindfulness, or looking
-                to enhance your daily routines</span>, you've come to the right place.
-          </p>
-          <p class="text-center lh-base">
-            Stay ahead of trends in <span class="fw-medium">fashion and wellness</span>, helping you express
-            yourself while staying grounded. Whether you're exploring <span class="fw-medium">meditation
-              techniques or seeking eco-friendly fashion ideas</span>, the Lifestyle Hub
-            provides the resources to make your journey fulfilling and
-            enriching.
-          </p>
-          <div class="d-flex justify-content-center">
-            <a href="#latest" class="btn btn-secondary btn-round-full buttonHover"
-              >Get Started <i class="btn-icon fa fa-angle-right ml-2"></i></a
-            >
-          </div>
+        <div class="col-lg-6 d-flex flex-column justify-content-center align-items-center text-center">
+            <hgroup>
+                <h2 class="fw-bold lh-base">Welcome to the Lifestyle Hub</h2>
+                <h3 class="lh-base">
+                    Explore trends, wellness, and living your best life
+                </h3>
+            </hgroup>
+            <p class="lh-base">
+                Lifestyle is all about finding balance, embracing health, and living in the moment. Whether you're into fitness, 
+                mindfulness, or just looking to elevate your daily routines, you've come to the right place.
+            </p>
+            <div class="d-flex justify-content-center">
+                <a href="#latest" class="btn btn-secondary btn-round-full buttonHover mb-3">
+                    Get Started <i class="btn-icon fa fa-angle-right ml-2"></i>
+                </a>
+            </div>
         </div>
         <div class="col-lg-6">
-          <figure class="figure">
-            <img
-              src="https://images.unsplash.com/photo-1507919909716-c8262e491cde?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-              class="img-fluid rounded"
-              alt="Wellness lifestyle image from Unsplash"
-            />
-            <figcaption class="figure-caption">
-              <a
-                href="https://unsplash.com"
-                target="_blank"
-                class="text-primary"
-                >Photo from Unsplash</a
-              >
-            </figcaption>
-          </figure>
+            <figure class="figure">
+                <img
+                    src="https://images.unsplash.com/photo-1507919909716-c8262e491cde?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    class="img-fluid rounded"
+                    alt="Wellness lifestyle image from Unsplash"
+                />
+                <figcaption class="figure-caption">
+                    <a
+                        href="https://unsplash.com"
+                        target="_blank"
+                        class="text-primary"
+                    >Photo from Unsplash</a>
+                </figcaption>
+            </figure>
         </div>
-      </div>
+    </div>
+  </div>
 
       <!-- Wellness Carousel -->
       <div class="row p-3 mt-4" id="latest">
@@ -117,7 +109,7 @@
                 <div class="carousel-inner">
                   <div class="carousel-item active shadow mb-5">
                     <img src="image/carousel1.jpeg" class="d-block w-100" alt="picture of a laptop" />
-                    <div class="carousel-caption d-none d-md-block border border-secondary-subtle rounded bg-secondary">
+                    <div class="carousel-caption border border-secondary-subtle rounded bg-secondary">
                       <h5 class="text-body-black lh-base">Benefits of Digital Detox</h5>
                       <p class="text-body-black lh-base">
                         Taking breaks from screens and social media to enhance
@@ -131,7 +123,7 @@
                   </div>
                   <div class="carousel-item shadow mb-5">
                     <img src="image/carousel2.jpeg" class="d-block w-100" alt="someone doing yoga" />
-                    <div class="carousel-caption d-none d-md-block border border-secondary-subtle rounded bg-secondary">
+                    <div class="carousel-caption border border-secondary-subtle rounded bg-secondary">
                       <h5 class="text-body-black lh-base">Yoga For Better Life</h5>
                       <p class="text-body-black lh-base">
                         Combines physical postures, breathing techniques, and
@@ -145,7 +137,7 @@
                   </div>
                   <div class="carousel-item shadow mb-5">
                     <img src="image/carousel3.jpeg" class="d-block w-100" alt="a person in beach with laptop" />
-                    <div class="carousel-caption d-none d-md-block border border-secondary-subtle rounded bg-secondary">
+                    <div class="carousel-caption border border-secondary-subtle rounded bg-secondary">
                       <h5 class="text-body-black lh-base">Nature Therapy?</h5>
                       <p class="text-body-black lh-base">
                         Spending time in nature to improve mental well-being,
@@ -158,7 +150,7 @@
                   </div>
                   <div class="carousel-item shadow mb-5">
                     <img src="image/_.jpeg" class="d-block w-100" alt="picture of a tree and sun" />
-                    <div class="carousel-caption d-none d-md-block border border-secondary-subtle rounded bg-secondary">
+                    <div class="carousel-caption border border-secondary-subtle rounded bg-secondary">
                       <h5 class="text-body-black lh-base">What is Mindfulness Meditation</h5>
                       <p class="text-body-black lh-base">
                         Focus on the present moment, observing thoughts and
@@ -289,14 +281,14 @@
 
     <!-- Subcribe Section -->
     <section aria-label="Subscribe example">
-      <div class="container-fluid subs-custom p-5">
-        <article class="text-center">
+      <div class="container-fluid subs-custom p-5" id="subs">
+        <article class="text-center mb-3">
           <hgroup>
             <h2>Join Our Community</h2>
             <h3>Subscribe for the latest lifestyle updates</h3>
           </hgroup>
-          <form class="myForm row g-3 justify-content-center" id="myForm">
-            <div class="col-md-4">
+          <form class="myForm row g-3 justify-content-center" id="myForm" novalidate>
+            <div class="col-md-4 mt-4 mb-2">
               <input
                 type="text"
                 class="form-control"
@@ -307,7 +299,7 @@
                 required
               />
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 mt-4 mb-2">
               <input
                 type="email"
                 class="form-control"
@@ -324,7 +316,7 @@
               </button>
             </div>
           </form>
-          <div id="error-message" class="text-danger mt-3" style="display: none;"></div>
+          <div id="error-message" class="text-danger mt-3 fw-bold fs-6" style="display: none;"></div>
         </article>
       </div>
     </section>
