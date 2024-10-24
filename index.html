@@ -18,47 +18,58 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body class="bg-light text-dark">
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg custom-navbar navbar-dark custom-navbar">
-      <div class="container-fluid p-3 ps-5 pe-5">
-        <a class="navbar-brand text-white fs-2 fw-bold" href="#"
-          >Lifestyle Vibes</a
-        >
+   <!-- Navbar -->
+   <nav class="navbar navbar-expand-lg custom-navbar navbar-dark custom-navbar">
+    <div class="container-fluid p-3 ps-5 pe-5">
+        <a class="navbar-brand text-white fs-2 fw-bold" href="#">Lifestyle Vibes</a>
         <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-icon text-white"></span>
+            <span class="navbar-toggler-icon text-white"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item me-2">
-              <a class="nav-link active text-white fw-medium" id="home" aria-current="page" href="index.html">Home</a>
-            </li>
-            <li class="nav-item me-2">
-                <a class="nav-link text-white fw-medium" id="about" href="about.html">About</a>
-            </li>
-            <li class="nav-item me-2">
-                <a class="nav-link text-white fw-medium" id="contact" href="#">Contact</a>
-            </li>
-            <li class="nav-item me-2">
-              <a class="btn btn-light fw-medium buttonHover" href="#subs">Subscribe</a>
-            </li>
-          </ul>
-          <i id="themeIcon" class="fas fa-sun icon-toggle dark-mode ms-3 text-light"></i>
+            <ul class="navbar-nav ms-auto d-flex align-items-center">
+                <li class="nav-item dropdown me-2">
+                    <a class="nav-link dropdown-toggle text-white fw-medium" href="index.html" id="navbarDropdown1" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Home
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown1">
+                        <li><a class="dropdown-item" href="index.html#home">Welcome</a></li>
+                        <li><a class="dropdown-item" href="index.html#latest">Latest News</a></li>
+                        <li><a class="dropdown-item" href="index.html#tren">Fashion & Trend</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown me-2">
+                    <a class="nav-link dropdown-toggle text-white fw-medium" href="about.html" id="navbarDropdown2" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        About
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown2">
+                        <li><a class="dropdown-item" href="about.html#vision">Story & Vision</a></li>
+                        <li><a class="dropdown-item" href="about.html#mission">Our Mission</a></li>
+                        <li><a class="dropdown-item" href="about.html#team">Our Team</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item me-2">
+                    <a class="nav-link text-white fw-medium" id="contact" href="contact.html">Contact</a>
+                </li>
+                <li class="nav-item me-4">
+                    <a class="btn btn-light fw-medium buttonHover" href="#subs">Subscribe</a>
+                </li>
+            </ul>
         </div>
-      </div>
-    </nav>
+    </div>
+  </nav>
 
     <!-- Main Home Content -->
-    <main class="container my-5">
+    <main class="container my-5" id="home">
       <!-- Home -->
-      <div class="row border border-secondary-subtle rounded p-3 shadow mb-5 bg-body-tertiary animation1" id="home">
+      <div class="row border border-secondary-subtle rounded p-3 shadow mb-5 bg-body-tertiary animation1">
         <div class="col-lg-6 d-flex flex-column justify-content-center align-items-center text-center">
             <hgroup>
                 <h2 class="fw-bold lh-base">Welcome to the Lifestyle Hub</h2>
@@ -103,15 +114,15 @@
           fitness tips that keep you grounded and healthy.
         </p>
         <div class="row">
-          <div class="col-12 col-md-8">
+          <div class="col-12 col-lg-8">
             <div class="carousel-container">
               <div id="carousel" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                   <div class="carousel-item active shadow mb-5">
                     <img src="image/carousel1.jpeg" class="d-block w-100" alt="picture of a laptop" />
                     <div class="carousel-caption border border-secondary-subtle rounded bg-secondary">
-                      <h5 class="text-body-black lh-base">Benefits of Digital Detox</h5>
-                      <p class="text-body-black lh-base">
+                      <h5 class="text-light lh-base">Benefits of Digital Detox</h5>
+                      <p class="text-light fw-normal lh-base">
                         Taking breaks from screens and social media to enhance
                         mental clarity, reduce anxiety, and improve face-to-face
                         interactions.
@@ -124,8 +135,8 @@
                   <div class="carousel-item shadow mb-5">
                     <img src="image/carousel2.jpeg" class="d-block w-100" alt="someone doing yoga" />
                     <div class="carousel-caption border border-secondary-subtle rounded bg-secondary">
-                      <h5 class="text-body-black lh-base">Yoga For Better Life</h5>
-                      <p class="text-body-black lh-base">
+                      <h5 class="text-light lh-base">Yoga For Better Life</h5>
+                      <p class="text-light fw-normal lh-base">
                         Combines physical postures, breathing techniques, and
                         meditation to enhance flexibility, strength, and mental
                         clarity.
@@ -138,8 +149,8 @@
                   <div class="carousel-item shadow mb-5">
                     <img src="image/carousel3.jpeg" class="d-block w-100" alt="a person in beach with laptop" />
                     <div class="carousel-caption border border-secondary-subtle rounded bg-secondary">
-                      <h5 class="text-body-black lh-base">Nature Therapy?</h5>
-                      <p class="text-body-black lh-base">
+                      <h5 class="text-light lh-base">Nature Therapy?</h5>
+                      <p class="text-light fw-normal lh-base">
                         Spending time in nature to improve mental well-being,
                         reduce stress, and enhance overall mood.
                       </p>
@@ -151,8 +162,8 @@
                   <div class="carousel-item shadow mb-5">
                     <img src="image/_.jpeg" class="d-block w-100" alt="picture of a tree and sun" />
                     <div class="carousel-caption border border-secondary-subtle rounded bg-secondary">
-                      <h5 class="text-body-black lh-base">What is Mindfulness Meditation</h5>
-                      <p class="text-body-black lh-base">
+                      <h5 class="text-light lh-base">What is Mindfulness Meditation</h5>
+                      <p class="text-light fw-normal lh-base">
                         Focus on the present moment, observing thoughts and
                         feelings. This practice can reduce stress and improve
                         emotional well-being.
@@ -176,7 +187,7 @@
           </div>
 
           <!-- News Sidebar -->
-          <div class="col-12 col-md-4" id="news-sidebar">
+          <div class="col-12 col-lg-4" id="news-sidebar">
             <ul class="list-group list-group-flush shadow-sm rounded-3 p-2 animation2">
               <li class="list-group-item border-0 shadow-sm rounded mb-2">
                 <a href="https://wise.com/us/blog/best-wellness-retreats" class="text-decoration-none text-dark fw-bold">Breaking: Wellness Retreats 2024</a>
@@ -333,8 +344,13 @@
     <!-- Footer -->
     <footer class="footer mt-auto py-3 text-white text-center custom-footer">
       <div class="container">
-        <a href="#">Privacy Policy</a> •
-        <a href="#">Terms & Conditions</a>
+        <p class="text-center fw-bold fs-6 mt-4">Quick Link</p>
+        <a href="index.html" class="text-center text-light underline-light mb-3">Home<br></a>
+        <a href="about.html" class="text-center text-light underline-light mb-3">About <br></a>
+        <a href="contact.html" class="text-center text-light underline-light mb-3">Contact<br></a>
+        <p class="text-center fw-bold fs-4 mt-4">Lifestyle Vibes</p>
+        <a href="#" class="text-light underline-light">Privacy Policy</a> •
+        <a href="#" class="text-light underline-light">Terms & Conditions</a>
         <p>&copy; 2024 Lifestyle Vibes. All Rights Reserved.</p>
       </div>
     </footer>

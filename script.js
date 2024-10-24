@@ -1,23 +1,3 @@
-//Subscribe Form
-document.getElementById('myForm').addEventListener('submit', function(event) {
-    event.preventDefault();
-  
-    const emailInput = document.getElementById('email').value;
-    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-  
-    if (!emailPattern.test(emailInput)) {
-      const errorMessage = document.getElementById('error-message');
-      errorMessage.textContent = 'Please enter a valid email address !';
-      errorMessage.style.display = 'block';
-    } else {
-      document.getElementById('error-message').style.display = 'none';
-
-      alert('Thanks For Subscribing!');
-      
-      document.getElementById('myForm').reset();
-    }
-  });
-
 // Active Nav Bar
 function setActiveNav() {
     const navLinks = document.querySelectorAll('.nav-link');
@@ -79,9 +59,8 @@ function setActiveNav() {
               entry.target.classList.remove('scroll-animation');
           }
       });
-  }, { threshold: 0.5 });
+  }, { threshold: 0.2 });
 
-  // Observe all animations in the defined classes
   animationClasses.forEach((animationClass) => {
       const elements = document.querySelectorAll(`.${animationClass}`);
       elements.forEach((element) => {
@@ -124,4 +103,112 @@ document.addEventListener("DOMContentLoaded", () => {
         observer.observe(counter);
     });
 });
-  
+
+// Subscribe Form
+document.getElementById('myForm').addEventListener('submit', function(event) {
+    event.preventDefault(); 
+    validateFormSubs(this);
+});
+
+// Contact Form
+document.getElementById('Form').addEventListener('submit', function(event) {
+    event.preventDefault(); 
+    validateFormContact(this);
+});
+
+// Validation Subscribe Form
+function validateFormSubs(form) {
+    const nameInput = form.querySelector('input[name="firstname"]'); 
+    const emailInput = form.querySelector('input[type="email"]');
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    const invalidFeedbacks = form.querySelectorAll('.invalid-feedback');
+    invalidFeedbacks.forEach(feedback => feedback.style.display = 'none');
+
+    // Validate name input
+    if (!nameInput.value) {
+        nameInput.classList.add('is-invalid');
+        nameInput.nextElementSibling.style.display = 'block'; 
+    } else {
+        nameInput.classList.remove('is-invalid');
+    }
+
+    // Validate email input
+    if (!emailPattern.test(emailInput.value)) {
+        emailInput.classList.add('is-invalid');
+        emailInput.nextElementSibling.style.display = 'block'; 
+    } else {
+        emailInput.classList.remove('is-invalid');
+    }
+
+    if (nameInput.value && emailPattern.test(emailInput.value)) {
+        alert('Thanks For Subscribing!');
+        form.reset(); 
+    }
+}
+
+// Validation for Contact Form
+function validateFormContact(form) {
+    const nameInput = form.querySelector('input[name="name"]'); 
+    const emailInput = form.querySelector('input[type="email"]');
+    const messageInput = form.querySelector('textarea[name="message"]');
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    const invalidFeedbacks = form.querySelectorAll('.invalid-feedback');
+    invalidFeedbacks.forEach(feedback => feedback.style.display = 'none');
+
+    // Validate name input
+    if (!nameInput.value) {
+        nameInput.classList.add('is-invalid');
+        nameInput.nextElementSibling.style.display = 'block'; 
+    } else {
+        nameInput.classList.remove('is-invalid');
+    }
+
+    // Validate email input
+    if (!emailPattern.test(emailInput.value)) {
+        emailInput.classList.add('is-invalid');
+        emailInput.nextElementSibling.style.display = 'block'; 
+    } else {
+        emailInput.classList.remove('is-invalid');
+    }
+
+    // Validate message input
+    if (!messageInput.value) {
+        messageInput.classList.add('is-invalid');
+        messageInput.nextElementSibling.style.display = 'block'; 
+    } else {
+        messageInput.classList.remove('is-invalid');
+    }
+
+    if (nameInput.value && emailPattern.test(emailInput.value) && messageInput.value) {
+        alert('Your Message Has Been Sent! Thank You');
+        form.reset(); 
+    }
+}
+ 
+
+    document.addEventListener('DOMContentLoaded', function() {
+        const searchForm = document.querySelector('form[role="search"]');
+        
+        searchForm.addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent the form from submitting the traditional way
+            
+            const searchInput = document.getElementById('searchInput').value;
+            
+            // Log the search input to the console (replace this with your search logic)
+            console.log('Searching for:', searchInput);
+            
+            // You can implement your search logic here
+            // For example, filter a list of items or make an API call
+            
+            // Example: Filtering an array of items (you can replace this with your own data)
+            const items = ['Apple', 'Banana', 'Cherry', 'Date', 'Fig', 'Grape'];
+            const filteredItems = items.filter(item => 
+                item.toLowerCase().includes(searchInput.toLowerCase())
+            );
+            
+            // Display the results (for demonstration, logging to console)
+            console.log('Filtered Items:', filteredItems);
+        });
+    });

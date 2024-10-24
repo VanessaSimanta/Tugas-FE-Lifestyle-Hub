@@ -21,43 +21,54 @@
   <body class="bg-light text-dark">
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg custom-navbar navbar-dark custom-navbar">
-      <div class="container-fluid p-3 ps-5 pe-5">
-        <a class="navbar-brand text-white fs-2 fw-bold lh-base" href="#"
-          >Lifestyle Vibes</a
-        >
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon text-white"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item me-2">
-              <a class="nav-link active text-white fw-medium" id="home" aria-current="page" href="index.html">Home</a>
-            </li>
-            <li class="nav-item me-2">
-                <a class="nav-link text-white fw-medium" id="about" href="about.html">About</a>
-            </li>
-            <li class="nav-item me-2">
-                <a class="nav-link text-white fw-medium" id="contact" href="#">Contact</a>
-            </li>
-            <li class="nav-item me-2">
-              <a class="btn btn-light fw-medium buttonHover" href="#subs">Subscribe</a>
-            </li>
-          </ul>
-          <i id="themeIcon" class="fas fa-sun icon-toggle dark-mode ms-3 text-light"></i>
+        <div class="container-fluid p-3 ps-5 pe-5">
+            <a class="navbar-brand text-white fs-2 fw-bold" href="#">Lifestyle Vibes</a>
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+            >
+                <span class="navbar-toggler-icon text-white"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto d-flex align-items-center">
+                    <li class="nav-item dropdown me-2">
+                        <a class="nav-link dropdown-toggle text-white fw-medium" href="index.html" id="navbarDropdown1" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Home
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown1">
+                            <li><a class="dropdown-item" href="index.html#home">Welcome</a></li>
+                            <li><a class="dropdown-item" href="index.html#latest">Latest News</a></li>
+                            <li><a class="dropdown-item" href="index.html#tren">Fashion & Trend</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown me-2">
+                        <a class="nav-link dropdown-toggle text-white fw-medium" href="about.html" id="navbarDropdown2" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            About
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown2">
+                            <li><a class="dropdown-item" href="about.html#vision">Story & Vision</a></li>
+                            <li><a class="dropdown-item" href="about.html#mission">Our Mission</a></li>
+                            <li><a class="dropdown-item" href="about.html#team">Our Team</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item me-2">
+                        <a class="nav-link text-white fw-medium" id="contact" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item me-4">
+                        <a class="btn btn-light fw-medium buttonHover" href="#subs">Subscribe</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-      </div>
-    </nav>
+      </nav>
 
     <!-- Main About Content -->
-    <main class="container my-5">
+    <main class="container my-5" id="story">
         <div class="row justify-content-center">
           <section class="col-lg-10">
             <div class="mb-5">
@@ -112,7 +123,7 @@
             </div>              
             
             <!-- Our Mission -->
-            <div class="mb-5">
+            <div class="mb-5" id="mission">
                 <h3 class="h4 text-center fw-medium lh-base">Our Mission</h3>
                 <p class="text-center mt-4 lh-base">
                     Our mission is to inspire and empower individuals to live
@@ -123,35 +134,34 @@
                 <div class="container mt-5">
                     <div class="row text-center">
                         <div class="col-lg-4 col-md-6 col-sm-6">
-                        <div class="counter-item mb-5 mb-lg-0 p-4 rounded shadow border border-secondary custom-background">
-                            <h3 class="mb-0">
-                            <span class="counter-stat font-weight-bold display-4" data-target="125">0</span> M
-                            </h3>
-                            <p class="text-muted fw-medium">Subscriber</p>
-                        </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-6">
-                        <div class="counter-item mb-5 mb-lg-0 p-4 rounded shadow border border-secondary custom-background">
-                            <h3 class="mb-0">
-                            <span class="counter-stat font-weight-bold display-4" data-target="1215">0</span>
-                            </h3>
-                            <p class="text-muted fw-medium">Happy Readers</p>
-                        </div>
+                            <div class="counter-item mb-5 p-4 rounded shadow border border-secondary custom-background">
+                                <h3 class="mb-0">
+                                <span class="counter-stat font-weight-bold display-4" data-target="125">0</span> M
+                                </h3>
+                                <p class="text-muted fw-medium">Subscriber</p>
+                            </div>
                         </div>
                         <div class="col-lg-4 col-md-6 col-sm-6">
-                        <div class="counter-item p-4 rounded shadow border border-secondary custom-background">
-                            <h3 class="mb-0">
-                            <span class="counter-stat font-weight-bold display-4" data-target="25">0</span>
-                            </h3>
-                            <p class="text-muted fw-medium">Countries Reach</p>
+                            <div class="counter-item mb-5 p-4 rounded shadow border border-secondary custom-background">
+                                <h3 class="mb-0">
+                                <span class="counter-stat font-weight-bold display-4" data-target="1215">0</span>
+                                </h3>
+                                <p class="text-muted fw-medium">Happy Readers</p>
+                            </div>
                         </div>
+                        <div class="col-lg-4 col-md-6 col-sm-6">
+                            <div class="counter-item mb-5 p-4 rounded shadow border border-secondary custom-background">
+                                <h3 class="mb-0">
+                                <span class="counter-stat font-weight-bold display-4" data-target="25">0</span>
+                                </h3>
+                                <p class="text-muted fw-medium">Countries Reach</p>
+                            </div>
                         </div>
                     </div>
                 </div>           
-            </div>
-            
+    
             <!-- Meet The Team -->
-            <div>
+            <div class="mt-5" id="team">
                 <h3 class="h4 text-center fw-medium lh-base">Meet the Team</h3>
                 <p class="text-center mt-4 lh-base">
                     Our team consists of wellness enthusiasts, fitness experts, and lifestyle gurus. We're dedicated to bringing you the latest insights and trends to help you live your best life.
@@ -159,7 +169,7 @@
                 <div class="container blog-page">
                     <div class="row clearfix">
                         <div class="col-lg-4 col-md-12">
-                            <div class="card single_post mt-2 animation1">
+                            <div class="card single_post mt-2 animation3">
                                 <div class="header">
                                     <h2><strong>Wellness</strong> Enthusiasts</h2>
                                 </div>
@@ -180,7 +190,7 @@
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-12">
-                            <div class="card single_post mt-2 animation1">
+                            <div class="card single_post mt-2 animation3">
                                 <div class="header">
                                     <h2><strong>Fitness</strong> Experts</h2>
                                 </div>
@@ -201,7 +211,7 @@
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-12">
-                            <div class="card single_post mt-2 animation1">
+                            <div class="card single_post mt-2 animation3">
                                 <div class="header">
                                     <h2><strong>Lifestyle</strong> Gurus</h2>
                                 </div>
@@ -236,7 +246,7 @@
               <h2>Stay in the Loop</h2>
               <h3>Subscribe to our Newsletter</h3>
             </hgroup>
-            <form class="myForm row g-3 justify-content-center" id="myForm">
+            <form class="myForm row g-3 justify-content-center" id="myForm" novalidate>
               <div class="col-md-4">
                 <input
                   type="text"
@@ -282,8 +292,13 @@
       <!-- Footer -->
       <footer class="footer mt-auto py-3 text-white text-center custom-footer">
         <div class="container">
-          <a href="#">Privacy Policy</a> •
-          <a href="#">Terms & Conditions</a>
+          <p class="text-center fw-bold fs-6 mt-4">Quick Link</p>
+          <a href="index.html" class="text-center text-light underline-light mb-3">Home<br></a>
+          <a href="about.html" class="text-center text-light underline-light mb-3">About <br></a>
+          <a href="contact.html" class="text-center text-light underline-light mb-3">Contact<br></a>
+          <p class="text-center fw-bold fs-4 mt-4">Lifestyle Vibes</p>
+          <a href="#" class="text-light underline-light">Privacy Policy</a> •
+          <a href="#" class="text-light underline-light">Terms & Conditions</a>
           <p>&copy; 2024 Lifestyle Vibes. All Rights Reserved.</p>
         </div>
       </footer>
