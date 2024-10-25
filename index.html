@@ -61,6 +61,12 @@
                 <li class="nav-item me-4">
                     <a class="btn btn-light fw-medium buttonHover" href="#subs">Subscribe</a>
                 </li>
+                <li class="nav-item">
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="text" placeholder="Search">
+                        <button class="btn btn-outline-light" type="submit">Search</button>
+                    </form>
+                </li>
             </ul>
         </div>
     </div>
@@ -293,13 +299,13 @@
     <!-- Subcribe Section -->
     <section aria-label="Subscribe example">
       <div class="container-fluid subs-custom p-5" id="subs">
-        <article class="text-center mb-3">
+        <article class="text-center">
           <hgroup>
-            <h2>Join Our Community</h2>
-            <h3>Subscribe for the latest lifestyle updates</h3>
+            <h2>Stay in the Loop</h2>
+            <h3>Subscribe to our Newsletter</h3>
           </hgroup>
           <form class="myForm row g-3 justify-content-center" id="myForm" novalidate>
-            <div class="col-md-4 mt-4 mb-2">
+            <div class="col-md-4">
               <input
                 type="text"
                 class="form-control"
@@ -309,8 +315,9 @@
                 aria-label="First Name"
                 required
               />
+              <div class="invalid-feedback">Please enter your name.</div>
             </div>
-            <div class="col-md-4 mt-4 mb-2">
+            <div class="col-md-4">
               <input
                 type="email"
                 class="form-control"
@@ -320,6 +327,7 @@
                 aria-label="Email"
                 required
               />
+              <div class="invalid-feedback">Please enter a valid email address.</div>
             </div>
             <div class="col-12">
               <button type="submit" class="btn bg-secondary text-white buttonHover">
@@ -327,7 +335,6 @@
               </button>
             </div>
           </form>
-          <div id="error-message" class="text-danger mt-3 fw-bold fs-6" style="display: none;"></div>
         </article>
       </div>
     </section>

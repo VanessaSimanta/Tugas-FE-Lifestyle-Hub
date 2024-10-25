@@ -72,7 +72,7 @@ function setActiveNav() {
 function animateCounter(element, target) {
     let count = 0;
     const increment = Math.ceil(target / 100); 
-    const duration = 1000; 
+    const duration = 2000; 
     const interval = Math.round(duration / (target / increment));
   
     const counter = setInterval(() => {
@@ -187,28 +187,3 @@ function validateFormContact(form) {
     }
 }
  
-
-    document.addEventListener('DOMContentLoaded', function() {
-        const searchForm = document.querySelector('form[role="search"]');
-        
-        searchForm.addEventListener('submit', function(event) {
-            event.preventDefault(); // Prevent the form from submitting the traditional way
-            
-            const searchInput = document.getElementById('searchInput').value;
-            
-            // Log the search input to the console (replace this with your search logic)
-            console.log('Searching for:', searchInput);
-            
-            // You can implement your search logic here
-            // For example, filter a list of items or make an API call
-            
-            // Example: Filtering an array of items (you can replace this with your own data)
-            const items = ['Apple', 'Banana', 'Cherry', 'Date', 'Fig', 'Grape'];
-            const filteredItems = items.filter(item => 
-                item.toLowerCase().includes(searchInput.toLowerCase())
-            );
-            
-            // Display the results (for demonstration, logging to console)
-            console.log('Filtered Items:', filteredItems);
-        });
-    });
