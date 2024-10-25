@@ -230,6 +230,24 @@
           </div>
         </div>
       </div>
+      <button id="triggerModal" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#customModal" style="display:none;">
+      </button>
+      <div class="modal fade" id="customModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header bg-body-secondary">
+              <h5 class="modal-title fw-bold" id="exampleModalLabel">Lifestyle Vibes</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body custom-alert fw-medium">
+              Your Message Has Been Sent. Thank You !
+            </div>
+            <div class="modal-footer custom-alert">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">OK</button>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
 
     <!-- Subcribe Section -->
@@ -240,11 +258,7 @@
             <h2>Stay in the Loop</h2>
             <h3>Subscribe to our Newsletter</h3>
           </hgroup>
-          <form
-            class="myForm row g-3 justify-content-center"
-            id="myForm"
-            novalidate
-          >
+          <form class="myForm row g-3 justify-content-center" id="myForm" novalidate>
             <div class="col-md-4">
               <input
                 type="text"
@@ -267,20 +281,33 @@
                 aria-label="Email"
                 required
               />
-              <div class="invalid-feedback">
-                Please enter a valid email address.
-              </div>
+              <div class="invalid-feedback">Please enter a valid email address.</div>
             </div>
             <div class="col-12">
-              <button
-                type="submit"
-                class="btn bg-secondary text-white buttonHover"
-              >
+              <button type="submit" class="btn bg-secondary text-white buttonHover">
                 Subscribe
               </button>
             </div>
           </form>
         </article>
+      </div>
+      <button id="triggerModal" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#customModal" style="display:none;">
+      </button>
+      <div class="modal fade" id="customModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header bg-body-secondary">
+              <h5 class="modal-title fw-bold" id="exampleModalLabel">Lifestyle Vibes</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body custom-alert fw-medium">
+              Thank You For Subscribing !
+            </div>
+            <div class="modal-footer custom-alert">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">OK</button>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 

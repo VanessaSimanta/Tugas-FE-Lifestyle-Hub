@@ -142,7 +142,7 @@ function validateFormSubs(form) {
     }
 
     if (nameInput.value && emailPattern.test(emailInput.value)) {
-        alert('Thanks For Subscribing!');
+        document.getElementById('triggerModal').click();
         form.reset();
     }
 }
@@ -182,7 +182,8 @@ function validateFormContact(form) {
     }
 
     if (nameInput.value && emailPattern.test(emailInput.value) && messageInput.value) {
-        alert('Your Message Has Been Sent! Thank You');
+        document.getElementById('triggerModal').click();
         form.reset();
     }
 }
+

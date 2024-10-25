@@ -8,6 +8,10 @@
     background-color: #39333d;
 }
 
+.custom-alert {
+    background-color: #eaeff4;
+}
+
 #btn-back-to-top {
     position: fixed;
     bottom: 20px;
