@@ -3,206 +3,320 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="keywords" content="health, lifestyle, meditation, exercise">
+    <meta name="description" content="Get the latest news and tips about lifestyle">
     <title>Lifestyle Hub</title>
+
     <!-- Bootstrap 5 -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
+
     <!-- Icons -->
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css"
+    />
+
     <!-- CSS -->
     <link rel="stylesheet" href="style.css" />
   </head>
+
   <body class="bg-light text-dark">
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg custom-navbar navbar-dark custom-navbar">
-        <div class="container-fluid p-3 ps-5 pe-5">
-            <a class="navbar-brand text-white fs-2 fw-bold" href="#">Lifestyle Vibes</a>
-            <button
-                class="navbar-toggler"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#navbarNav"
-                aria-controls="navbarNav"
+    <nav
+      class="navbar navbar-expand-lg custom-navbar navbar-dark custom-navbar"
+    >
+      <div class="container-fluid p-3 ps-5 pe-5">
+        <a class="navbar-brand text-white fs-2 fw-bold" href="#"
+          >Lifestyle Vibes</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon text-white"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto d-flex align-items-center">
+            <li class="nav-item dropdown me-2">
+              <a
+                class="nav-link dropdown-toggle text-white fw-medium"
+                href="index.html"
+                id="navbarDropdown1"
+                role="button"
+                data-bs-toggle="dropdown"
                 aria-expanded="false"
-                aria-label="Toggle navigation"
-            >
-                <span class="navbar-toggler-icon text-white"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto d-flex align-items-center">
-                    <li class="nav-item dropdown me-2">
-                        <a class="nav-link dropdown-toggle text-white fw-medium" href="index.html" id="navbarDropdown1" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Home
-                        </a>
-                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown1">
-                            <li><a class="dropdown-item" href="index.html#home">Welcome</a></li>
-                            <li><a class="dropdown-item" href="index.html#latest">Latest News</a></li>
-                            <li><a class="dropdown-item" href="index.html#tren">Fashion & Trend</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown me-2">
-                        <a class="nav-link dropdown-toggle text-white fw-medium" href="about.html" id="navbarDropdown2" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            About
-                        </a>
-                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown2">
-                            <li><a class="dropdown-item" href="about.html#vision">Story & Vision</a></li>
-                            <li><a class="dropdown-item" href="about.html#mission">Our Mission</a></li>
-                            <li><a class="dropdown-item" href="about.html#team">Our Team</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item me-2">
-                        <a class="nav-link text-white fw-medium" id="contact" href="contact.html">Contact</a>
-                    </li>
-                    <li class="nav-item me-4">
-                        <a class="btn btn-light fw-medium buttonHover" href="#subs">Subscribe</a>
-                    </li>
-                    <li class="nav-item">
-                        <form class="d-flex" role="search">
-                            <input class="form-control me-2" type="text" placeholder="Search">
-                            <button class="btn btn-outline-light" type="submit">Search</button>
-                        </form>
-                    </li>
-                </ul>
-            </div>
+              >
+                Home
+              </a>
+              <ul
+                class="dropdown-menu dropdown-menu-end"
+                aria-labelledby="navbarDropdown1"
+              >
+                <li>
+                  <a class="dropdown-item" href="index.html#home">Welcome</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="index.html#latest"
+                    >Latest News</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="index.html#tren"
+                    >Fashion & Trend</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown me-2">
+              <a
+                class="nav-link dropdown-toggle text-white fw-medium"
+                href="about.html"
+                id="navbarDropdown2"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                About
+              </a>
+              <ul
+                class="dropdown-menu dropdown-menu-end"
+                aria-labelledby="navbarDropdown2"
+              >
+                <li>
+                  <a class="dropdown-item" href="about.html#vision"
+                    >Story & Vision</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="about.html#mission"
+                    >Our Mission</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="about.html#team">Our Team</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item me-2">
+              <a
+                class="nav-link text-white fw-medium"
+                id="contact"
+                href="contact.html"
+                >Contact</a
+              >
+            </li>
+            <li class="nav-item me-4">
+              <a class="btn btn-light fw-medium buttonHover" href="#subs"
+                >Subscribe</a
+              >
+            </li>
+            <li class="nav-item">
+              <form class="d-flex" role="search">
+                <input
+                  class="form-control me-2"
+                  type="text"
+                  placeholder="Search"
+                />
+                <button class="btn btn-outline-light" type="submit">
+                  Search
+                </button>
+              </form>
+            </li>
+          </ul>
         </div>
-      </nav>
-      
+      </div>
+    </nav>
+
     <!-- Main Contact Content -->
     <main class="container my-5">
-        <div class="row">
-            <div class="col-lg-6 mt-4">
-                <div class="card p-4 shadow custom-card animation1">
-                    <h5 class="card-title text-center fw-bold fs-2">Contact Us</h5>
-                    <form novalidate id="Form">
-                        <div class="mb-3">
-                            <label for="name" class="form-label">Full Name</label>
-                            <input class="form-control" type="text" name="name" id="name" placeholder="Full Name" required>
-                            <div class="invalid-feedback">Please enter your name.</div>
-                        </div>
-    
-                        <div class="mb-3">
-                            <label for="email" class="form-label">Email</label>
-                            <input class="form-control" type="email" name="email" id="email" placeholder="Email" required>
-                            <div class="invalid-feedback">Please enter a valid email address.</div>
-                        </div>
-    
-                        <div class="mb-3">
-                            <label for="message" class="form-label">Your Message</label>
-                            <textarea class="form-control" name="message" id="message" rows="4" placeholder="Your Message" required></textarea>
-                            <div class="invalid-feedback">Please enter your message.</div>
-                        </div>
-    
-                        <button type="submit" class="btn btn-secondary w-100">Send Email</button>
-                    </form>
-                    <div class="mt-3 text-center">
-                        <p>Contact our 24/7 call center: <span class="fw-bold">+0987 6678 0928</span></p>
-                        <p>Follow us:</p>
-                        <a href="https://facebook.com" class="text-dark me-2">
-                            <i class="fab fa-facebook-f fs-4"></i>
-                        </a>
-                        <a href="https://twitter.com" class="text-dark me-2">
-                            <i class="fab fa-twitter fs-4"></i>
-                        </a>
-                        <a href="https://instagram.com" class="text-dark me-2">
-                            <i class="fab fa-instagram fs-4"></i>
-                        </a>
-                        <a href="https://linkedin.com" class="text-dark">
-                            <i class="fab fa-linkedin-in fs-4"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-    
-            <div class="col-lg-6 mt-4">
-                <div class="card p-4 shadow custom-card h-100 animation1">
-                    <h5 class="card-title text-center fw-bold fs-2">Find Us!</h5>
-                    <div class="map-responsive">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.711642995291!2d106.78641187589113!3d-6.169353293817921!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f65c9acbaccb%3A0xa5418424ff16c58a!2sUniversitas%20Tarumanagara%2C%20Jl.%20Letjen%20S.%20Parman%2C%20RT.6%2FRW.16%2C%20Tomang%2C%20Kec.%20Grogol%20petamburan%2C%20Kota%20Jakarta%20Barat%2C%20Daerah%20Khusus%20Ibukota%20Jakarta%2011440!5e0!3m2!1sen!2sid!4v1729777735285!5m2!1sen!2sid"
-                        width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </main>
-    
-
-    <!-- Subcribe Section -->
-    <section aria-label="Subscribe example">
-        <div class="container-fluid subs-custom p-5" id="subs">
-          <article class="text-center">
-            <hgroup>
-              <h2>Stay in the Loop</h2>
-              <h3>Subscribe to our Newsletter</h3>
-            </hgroup>
-            <form class="myForm row g-3 justify-content-center" id="myForm" novalidate>
-              <div class="col-md-4">
+      <div class="row">
+        <div class="col-lg-6 mt-4">
+          <div class="card p-4 shadow custom-card animation1">
+            <h5 class="card-title text-center fw-bold fs-2">Contact Us</h5>
+            <form novalidate id="Form">
+              <div class="mb-3">
+                <label for="name" class="form-label">Full Name</label>
                 <input
-                  type="text"
                   class="form-control"
-                  id="firstname"
-                  name="firstname"
-                  placeholder="First Name"
-                  aria-label="First Name"
+                  type="text"
+                  name="name"
+                  id="name"
+                  placeholder="Full Name"
                   required
                 />
                 <div class="invalid-feedback">Please enter your name.</div>
               </div>
-              <div class="col-md-4">
+
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
                 <input
-                  type="email"
                   class="form-control"
-                  id="email"
+                  type="email"
                   name="email"
+                  id="email"
                   placeholder="Email"
-                  aria-label="Email"
                   required
                 />
-                <div class="invalid-feedback">Please enter a valid email address.</div>
+                <div class="invalid-feedback">
+                  Please enter a valid email address.
+                </div>
               </div>
-              <div class="col-12">
-                <button type="submit" class="btn bg-secondary text-white buttonHover">
-                  Subscribe
-                </button>
+
+              <div class="mb-3">
+                <label for="message" class="form-label">Your Message</label>
+                <textarea
+                  class="form-control"
+                  name="message"
+                  id="message"
+                  rows="4"
+                  placeholder="Your Message"
+                  required
+                ></textarea>
+                <div class="invalid-feedback">Please enter your message.</div>
               </div>
+
+              <button type="submit" class="btn btn-secondary w-100">
+                Send Email
+              </button>
             </form>
-          </article>
+            <div class="mt-3 text-center">
+              <p>
+                Contact our 24/7 call center:
+                <span class="fw-bold">+0987 6678 0928</span>
+              </p>
+              <p>Follow us:</p>
+              <a href="https://facebook.com" class="text-dark me-2">
+                <i class="fab fa-facebook-f fs-4"></i>
+              </a>
+              <a href="https://twitter.com" class="text-dark me-2">
+                <i class="fab fa-twitter fs-4"></i>
+              </a>
+              <a href="https://instagram.com" class="text-dark me-2">
+                <i class="fab fa-instagram fs-4"></i>
+              </a>
+              <a href="https://linkedin.com" class="text-dark">
+                <i class="fab fa-linkedin-in fs-4"></i>
+              </a>
+            </div>
+          </div>
         </div>
-      </section>
-  
-      <!-- Back To Top -->
-      <button
+
+        <div class="col-lg-6 mt-4">
+          <div class="card p-4 shadow custom-card h-100 animation1">
+            <h5 class="card-title text-center fw-bold fs-2">Find Us!</h5>
+            <div class="map-responsive">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.711642995291!2d106.78641187589113!3d-6.169353293817921!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f65c9acbaccb%3A0xa5418424ff16c58a!2sUniversitas%20Tarumanagara%2C%20Jl.%20Letjen%20S.%20Parman%2C%20RT.6%2FRW.16%2C%20Tomang%2C%20Kec.%20Grogol%20petamburan%2C%20Kota%20Jakarta%20Barat%2C%20Daerah%20Khusus%20Ibukota%20Jakarta%2011440!5e0!3m2!1sen!2sid!4v1729777735285!5m2!1sen!2sid"
+                width="100%"
+                height="600"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Subcribe Section -->
+    <section aria-label="Subscribe example">
+      <div class="container-fluid subs-custom p-5" id="subs">
+        <article class="text-center">
+          <hgroup>
+            <h2>Stay in the Loop</h2>
+            <h3>Subscribe to our Newsletter</h3>
+          </hgroup>
+          <form
+            class="myForm row g-3 justify-content-center"
+            id="myForm"
+            novalidate
+          >
+            <div class="col-md-4">
+              <input
+                type="text"
+                class="form-control"
+                id="firstname"
+                name="firstname"
+                placeholder="First Name"
+                aria-label="First Name"
+                required
+              />
+              <div class="invalid-feedback">Please enter your name.</div>
+            </div>
+            <div class="col-md-4">
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                name="email"
+                placeholder="Email"
+                aria-label="Email"
+                required
+              />
+              <div class="invalid-feedback">
+                Please enter a valid email address.
+              </div>
+            </div>
+            <div class="col-12">
+              <button
+                type="submit"
+                class="btn bg-secondary text-white buttonHover"
+              >
+                Subscribe
+              </button>
+            </div>
+          </form>
+        </article>
+      </div>
+    </section>
+
+    <!-- Back To Top -->
+    <button
       type="button"
       class="btn custom-button btn-floating btn-lg"
       id="btn-back-to-top"
-      >
+    >
       <i class="fas fa-arrow-up text-white"></i>
-      </button>
-  
-      <!-- Footer -->
-      <footer class="footer mt-auto py-3 text-white text-center custom-footer">
-        <div class="container">
-          <p class="text-center fw-bold fs-6 mt-4">Quick Link</p>
-          <a href="index.html" class="text-center text-light underline-light mb-3">Home<br></a>
-          <a href="about.html" class="text-center text-light underline-light mb-3">About <br></a>
-          <a href="contact.html" class="text-center text-light underline-light mb-3">Contact<br></a>
-          <p class="text-center fw-bold fs-4 mt-4">Lifestyle Vibes</p>
-          <a href="#" class="text-light underline-light">Privacy Policy</a> •
-          <a href="#" class="text-light underline-light">Terms & Conditions</a>
-          <p>&copy; 2024 Lifestyle Vibes. All Rights Reserved.</p>
-        </div>
-      </footer>
-  
-      <!-- JS -->
-      <script src="script.js"></script>
-      <script
-        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-      ></script>
-    </body>
-  </html>
-  
+    </button>
+
+    <!-- Footer -->
+    <footer class="footer mt-auto py-3 text-white text-center custom-footer">
+      <div class="container">
+        <p class="text-center fw-bold fs-6 mt-4">Quick Link</p>
+        <a href="index.html" class="text-center text-light underline-light mb-3"
+          >Home<br
+        /></a>
+        <a href="about.html" class="text-center text-light underline-light mb-3"
+          >About <br
+        /></a>
+        <a
+          href="contact.html"
+          class="text-center text-light underline-light mb-3"
+          >Contact<br
+        /></a>
+        <p class="text-center fw-bold fs-4 mt-4">Lifestyle Vibes</p>
+        <a href="#" class="text-light underline-light">Privacy Policy</a> •
+        <a href="#" class="text-light underline-light">Terms & Conditions</a>
+        <p>&copy; 2024 Lifestyle Vibes. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <!-- JS -->
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

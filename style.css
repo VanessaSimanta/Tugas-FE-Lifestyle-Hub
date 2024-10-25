@@ -2,8 +2,10 @@
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
 
-.custom-navbar, .custom-footer, .custom-button {
-    background-color: #39333d; 
+.custom-navbar,
+.custom-footer,
+.custom-button {
+    background-color: #39333d;
 }
 
 #btn-back-to-top {
@@ -14,57 +16,59 @@
 }
 
 .carousel-container {
-    max-width: 800px; 
-    margin: 0 auto;   
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 .carousel-inner img {
-    width: 100%;      
-    height: 545px;    
+    width: 100%;
+    height: 545px;
 }
 
 #news-sidebar ul li:hover {
-    background-color: #f8f9fa; 
+    background-color: #f8f9fa;
     transition: background-color 0.3s ease;
-  }
+}
 
 .subs-custom {
     background-color: #c9d2d6;
 }
 
 .custom-footer a:hover {
-    text-decoration: underline; 
+    text-decoration: underline;
 }
 
-.btn, .list-group-item{
-    transition: background-color 0.3s ease, transform 0.3s ease; 
+.btn,
+.list-group-item {
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-.btn:hover, .list-group-item:hover {
-    background-color: #c9d2d6 !important; 
+.btn:hover,
+.list-group-item:hover {
+    background-color: #c9d2d6 !important;
     color: black;
-    transform: scale(1.05); 
+    transform: scale(1.05);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .card:hover {
-    background-color: #dae7ed !important; 
+    background-color: #dae7ed !important;
     color: black;
-    transform: scale(1.05); 
+    transform: scale(1.05);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .nav-item {
-    transition: transform 0.3s ease; 
+    transition: transform 0.3s ease;
 }
 
 .nav-item:hover {
-    transform: scale(1.10); 
+    transform: scale(1.10);
 }
 
 .nav-link.active {
     text-decoration: underline;
-    font-weight: bold !important; 
+    font-weight: bold !important;
 }
 
 .animation1 {
@@ -92,13 +96,13 @@
     opacity: 1;
     transform: translateX(0);
 }
-  
+
 .counter-item:hover {
-transform: translateY(-5px);
+    transform: translateY(-5px);
 }
 
 .counter-stat {
-color: #39333d; 
+    color: #39333d;
 }
 
 .custom-background {
@@ -116,11 +120,11 @@ color: #39333d;
     border-radius: .55rem;
     position: relative;
     width: 100%;
-    box-shadow: 0 1px 2px 0 rgba(0,0,0,0.1);
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
 }
 
 .card .body {
-    flex-grow: 1; 
+    flex-grow: 1;
     font-size: 14px;
     color: #424242;
     padding: 20px;
@@ -160,24 +164,24 @@ color: #39333d;
 
 i:hover {
     color: #757575;
-    transform: scale(1.05); 
+    transform: scale(1.05);
 }
 
-@media (max-width: 992px) { 
+@media (max-width: 992px) {
     .navbar-nav .nav-item .buttonHover {
-        margin-bottom: 15px; 
+        margin-bottom: 15px;
     }
 }
 
-@media (max-width: 768px) { 
+@media (max-width: 768px) {
     .carousel-inner img {
-        width: 100%;      
-        height: auto;    
+        width: 100%;
+        height: auto;
     }
 
     .carousel-caption {
-      padding: 10px;
-      font-size: 0.5rem;
+        padding: 10px;
+        font-size: 0.5rem;
     }
 
     .carousel-caption h5 {
@@ -185,15 +189,15 @@ i:hover {
     }
 
     .carousel-caption .btn {
-        font-size: 8px ; 
+        font-size: 8px;
         padding: 2px 3px;
         margin: 0;
-        width: auto; 
+        width: auto;
     }
 
     .map-responsive {
         overflow: hidden;
-        padding-top: 56.25%; 
+        padding-top: 56.25%;
         position: relative;
     }
 
@@ -206,7 +210,6 @@ i:hover {
     }
 
     .navbar-nav .nav-item .buttonHover {
-        margin-bottom: 15px; 
+        margin-bottom: 15px;
     }
-  }
-  
+}
